@@ -643,7 +643,7 @@ body {
     border: transparent;
     margin-bottom: 37px;
     padding: 18px 4px;
-cursor: pointer;
+    cursor: pointer;
 }
 
 .moduls__title {
@@ -706,7 +706,7 @@ cursor: pointer;
 
 .moduls__accordeon-btn::after {
     position: absolute;
-    content: url('../img/icons/accordeon/arrow.png');
+    content: url('../img/icons/accordeon/arrow1.svg');
     right: 5px;
     width: 22.694px;
     height: 22.694px;
@@ -764,17 +764,21 @@ cursor: pointer;
     margin-bottom: 40px;
 }
 
-.modul__list-item,.boneses__list-item {
+.modul__list-item,
+.boneses__list-item {
     display: flex;
     align-items: center;
     gap: 22px;
 }
-.modul__list,.bonuses__list{
+
+.modul__list,
+.bonuses__list {
     display: flex;
     flex-direction: column;
     gap: 5px;
     position: relative;
 }
+
 .bonuses__title {
     color: #509F51;
     text-align: center;
@@ -789,29 +793,31 @@ cursor: pointer;
 
 .results__title {
     color: #505050;
-text-align: center;
-font-family: Montserrat Alternates;
-font-size: 22px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 
 .results__list-item {
     color: #505050;
-text-align: center;
-font-family: Montserrat Alternates;
-font-size: 13px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 }
-.results__wrapper{
+
+.results__wrapper {
     padding: 0 20px;
 }
+
 .modul__list-item__lesson,
 .boneses__list-item__bonuse {
     position: relative;
@@ -824,10 +830,12 @@ text-transform: uppercase;
     top: -1px;
     right: -16.5px;
 }
-.boneses__list-item__bonuse::after{
+
+.boneses__list-item__bonuse::after {
     top: 0;
 }
-.boneses__list-item__bonuse{
+
+.boneses__list-item__bonuse {
     color: #26C129;
     text-align: center;
     font-family: Montserrat Alternates;
@@ -837,6 +845,177 @@ text-transform: uppercase;
     line-height: normal;
     text-transform: uppercase;
 }
+
+/*PRICE*/
+.price__container {
+    padding: 75px 15px 200px;
+}
+
+.price__title {
+    margin-bottom: 75px;
+
+}
+
+.price__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+
+.price__item {
+    border-radius: 29.963px;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 0;
+    background: #E7E7E7;
+    box-shadow: -3.9950082302093506px -3.9950082302093506px 49.937599182128906px 0px rgba(0, 0, 0, 0.15), 3.9950082302093506px 3.9950082302093506px 49.937599182128906px 0px rgba(0, 0, 0, 0.15);
+}
+
+.price__item-title {
+    color: #FFF;
+    margin: 0 auto;
+    padding: 16px;
+    margin-bottom: 25px;
+    font-family: Montserrat Alternates;
+    font-size: 15.98px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 29.963px;
+    background: linear-gradient(90deg, #76B852 0%, #8DC26F 100%);
+    max-width: 157.803px;
+    ;
+}
+
+.price__item-moduls {
+    margin-bottom: 20px;
+}
+
+.price__item-modul {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 10.99px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 195.9%;
+    /* 15.652px */
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 20px;
+}
+
+.price__item-modul__numb {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 12.988px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 195.9%;
+    /* 19.566px */
+    text-transform: uppercase;
+}
+
+.price__item-bonuses {
+    padding: 0 20px 25px;
+}
+
+.price__item-bonuse {
+    display: inline-block;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 195.9%;
+    text-transform: lowercase;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.price__item-bonuse::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    align-items: center;
+    width: 9.988px;
+    height: 9.988px;
+    background-color: #509F51;
+    border-radius: 50%;
+}
+
+.price__item-bottom__content {
+    margin-top: auto;
+    border-radius: 30px;
+    padding: 25px;
+    background: linear-gradient(90deg, #76B852 0%, #8DC26F 100%);
+
+}
+
+.price__values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.price__value-wrapper {
+    display: flex;
+
+}
+.price__buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+.price__value-time {color: #FFF;
+    font-family: Montserrat;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 195.9%; /* 16.651px */
+    text-transform: uppercase;}
+.price__value-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.price__value {
+    color: #FFF;
+font-family: Montserrat;
+font-size: 26.722px;
+font-style: normal;
+font-weight: 700;
+line-height: 195.9%; /* 52.349px */
+text-transform: uppercase;
+}
+
+.price__btn {
+    width: 70%;
+    border-radius: 29.963px;
+    background: #FFF;
+    border: transparent;
+    padding: 17px 5px;
+    color: #505050;
+    font-family: Montserrat;
+    font-size: 15.397px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 195.9%; /* 30.164px */
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
 /*MEDIA*/
 
 /* @media (min-width: 1012px) {
@@ -902,7 +1081,8 @@ text-transform: uppercase;
         flex-direction: column;
         gap: 50px;
     }
-    .accordeon{
+
+    .accordeon {
         width: 90%;
     }
 }
@@ -932,18 +1112,21 @@ text-transform: uppercase;
         border-radius: 40px;
         width: 196px;
     }
-.moduls__accordeon-btn{
-    font-size: 13px;
+
+    .moduls__accordeon-btn {
+        font-size: 13px;
+    }
 }
-}
+
 @media (max-width: 697px) {
-    .panel__content-top{
+    .panel__content-top {
         align-items: flex-start;
         flex-direction: column;
         gap: 10px;
     }
 
 }
+
 @media (max-width: 325px) {
     .swiper__slide-img {
         border-radius: 40px;
