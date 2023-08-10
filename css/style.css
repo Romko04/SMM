@@ -868,6 +868,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 14px 0;
+    align-items: center;
     background: #E7E7E7;
     box-shadow: -3.9950082302093506px -3.9950082302093506px 49.937599182128906px 0px rgba(0, 0, 0, 0.15), 3.9950082302093506px 3.9950082302093506px 49.937599182128906px 0px rgba(0, 0, 0, 0.15);
 }
