@@ -220,7 +220,7 @@ body {
 .banner__text-title::after {
     position: relative;
     right: -10px;
-    content: url('../img/lock.png');
+    content: url('../img/icons/banner/lock.svg');
 }
 
 .banner__text-subtitle {
@@ -361,6 +361,7 @@ body {
 }
 
 .about__img-wrapper {
+    margin-top: -30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,7 +405,8 @@ body {
     height: 58px;
     border-radius: 50%;
     margin: 3px 9px;
-    aspect-ratio: 1/1; /* Додано властивість для відношення сторін 1:1 */
+    aspect-ratio: 1/1;
+    /* Додано властивість для відношення сторін 1:1 */
 }
 
 
@@ -461,6 +463,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .swiper-pagination-bullet {
     border-radius: 21px;
     border: 1.615px solid #D9D9D9;
@@ -468,9 +471,11 @@ body {
     height: 21px;
     background-color: transparent;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background-color: rgba(217, 217, 217, 1);
 }
+
 .swiper__slide-img {
     border-radius: 40px;
     width: 265px;
@@ -519,7 +524,8 @@ body {
     margin-bottom: 50px;
 }
 
-.cases__slide-results__start, .cases__slide-results__finish {
+.cases__slide-results__start,
+.cases__slide-results__finish {
     color: #000;
     font-family: Montserrat Alternates;
     font-size: 16.018px;
@@ -534,7 +540,9 @@ body {
     display: flex;
     gap: 36px;
 }
-.cases__slide-results__start::before, .cases__slide-results__finish::before {
+
+.cases__slide-results__start::before,
+.cases__slide-results__finish::before {
     content: '';
     position: absolute;
     height: 14px;
@@ -544,23 +552,291 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-.cases__slide-results__start span, .cases__slide-results__finish span {
+
+.cases__slide-results__start span,
+.cases__slide-results__finish span {
     position: relative;
 }
-.cases__slide-results__start span::before, .cases__slide-results__finish span::before {
+
+.cases__slide-results__start span::before,
+.cases__slide-results__finish span::before {
     content: url('../img/icons/slider/Arrow\ 1.png');
     left: -25px;
     position: absolute;
 }
-.cases__slide-results__start::before{
+
+.cases__slide-results__start::before {
     background-color: #26C129;
 }
-.cases__slide-results__finish::before{
+
+.cases__slide-results__finish::before {
     background-color: #1F8621;
 }
 
 
+/*TEACHING*/
+.teaching__title {
+    margin-bottom: 75px;
 
+}
+
+.teaching__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-radius: 40px;
+    background: #ECECEC;
+    gap: 100px;
+    box-shadow: -4px -4px 50px 0px rgba(0, 0, 0, 0.12), 4px 4px 50px 0px rgba(0, 0, 0, 0.12);
+    padding: 65px 46px 54px;
+}
+
+.teaching__item-img {
+    width: 107px;
+    height: 95px;
+}
+
+.teaching__item {
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: -2px -2px 50px 0px rgba(204, 204, 204, 0.25), 2px 2px 50px 0px #CCC;
+}
+
+.teaching__item-wrapper {
+    padding: 25px 0;
+    border-radius: 50px;
+    background: #509F51;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.teaching__item-title {
+    color: #505050;
+    font-family: Montserrat Alternates;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 11px 0;
+}
+
+.teaching__item-text {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+}
+
+/*MODULS*/
+.accordeon {
+    position: relative;
+    width: 60%;
+    border-radius: 36.604px;
+    background: #FFF;
+    box-shadow: 2.9283018112182617px 2.9283018112182617px 36.6037712097168px 0px rgba(0, 0, 0, 0.05);
+    border: transparent;
+    margin-bottom: 37px;
+    padding: 18px 4px;
+cursor: pointer;
+}
+
+.moduls__title {
+    margin: 75px 0;
+
+}
+
+.moduls__accordeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 37px;
+    border-radius: 40px;
+    background: #ECECEC;
+    box-shadow: -4px -4px 50px 0px rgba(0, 0, 0, 0.12), 4px 4px 50px 0px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+
+}
+
+.panel {
+    overflow: hidden;
+    max-height: 0;
+    /* Початкова висота */
+    width: 100%;
+    border-radius: 0 0 36px 36px;
+    background: #FFF;
+    transition: all 0.8s ease;
+}
+
+.panelActive {
+    max-height: 1000px
+}
+
+/* Решта стилів без змін */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.moduls__accordeon-btn {
+    width: 100%;
+    border-radius: 36.604px;
+    color: #505050;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 19px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 600;
+    padding-right: 40px;
+    word-wrap: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.moduls__accordeon-btn::after {
+    position: absolute;
+    content: url('../img/icons/accordeon/arrow.png');
+    right: 5px;
+    width: 22.694px;
+    height: 22.694px;
+    background-color: rgba(80, 159, 81, 1);
+    border-radius: 50%;
+    transition: all .8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduls__accordeon-btn.active::after {
+    transform: rotate(180deg);
+}
+
+.moduls__accordeon-numb {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 31.479px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color: rgba(80, 159, 81, 1);
+    border-radius: 50%;
+    width: 46.815px;
+    height: 46.442px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel__content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 13px 0;
+    color: #505050;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.modul__list-item,.boneses__list-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.modul__list,.bonuses__list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.bonuses__title {
+    color: #509F51;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.results__title {
+    color: #505050;
+text-align: center;
+font-family: Montserrat Alternates;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+
+
+.results__list-item {
+    color: #505050;
+text-align: center;
+font-family: Montserrat Alternates;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+.results__wrapper{
+    padding: 0 20px;
+}
+.modul__list-item__lesson,
+.boneses__list-item__bonuse {
+    position: relative;
+}
+
+.modul__list-item__lesson::after,
+.boneses__list-item__bonuse::after {
+    position: absolute;
+    content: url('../img/icons/accordeon/Arrow 3.svg');
+    top: -1px;
+    right: -16.5px;
+}
+.boneses__list-item__bonuse::after{
+    top: 0;
+}
+.boneses__list-item__bonuse{
+    color: #26C129;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
 /*MEDIA*/
 
 /* @media (min-width: 1012px) {
@@ -578,7 +854,7 @@ body {
     .banner__text-title::after {
         position: relative;
         right: -10px;
-        content: url('../img/lock.png');
+        content: url('../img/icons/banner/lock.svg');
     }
 
     .banner__img {
@@ -615,10 +891,19 @@ body {
         bottom: -45px;
         transform: rotate(45deg);
     }
-    .about__content{
+
+    .about__content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .teaching__items {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .accordeon{
+        width: 90%;
     }
 }
 
@@ -629,31 +914,48 @@ body {
         bottom: -3px;
     }
 }
+
 @media (max-width: 564px) {
-    .title{
+    .title {
         font-size: 17.216px;
     }
-    .about__list-item__text{
+
+    .about__list-item__text {
         font-size: 14px;
     }
+
     .about__list-item {
         gap: 10px;
     }
+
     .swiper__slide-img {
         border-radius: 40px;
         width: 196px;
     }
-    
+.moduls__accordeon-btn{
+    font-size: 13px;
+}
+}
+@media (max-width: 697px) {
+    .panel__content-top{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
 @media (max-width: 325px) {
     .swiper__slide-img {
         border-radius: 40px;
         width: 175px;
     }
+
     .cases__slide-results {
         padding: 0 20px;
     }
-    .cases__slide-results__start, .cases__slide-results__finish {
+
+    .cases__slide-results__start,
+    .cases__slide-results__finish {
         color: #000;
         font-family: Montserrat Alternates;
         font-size: 11.018px;
