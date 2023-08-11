@@ -792,6 +792,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .results__title {
