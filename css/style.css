@@ -756,8 +756,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px 13px 0;
+    text-align: left;
     color: #505050;
-    text-align: center;
     font-family: Montserrat Alternates;
     font-size: 13px;
     font-style: normal;
@@ -815,6 +815,7 @@ body {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 .results__wrapper {
@@ -824,6 +825,7 @@ body {
 .modul__list-item__lesson,
 .boneses__list-item__bonuse {
     position: relative;
+    white-space: nowrap;
 }
 
 .modul__list-item__lesson::after,
@@ -921,11 +923,16 @@ body {
     line-height: 195.9%;
     /* 19.566px */
     text-transform: uppercase;
+    white-space: nowrap;
 }
-
+.price__item-modul__value{
+    text-align: left;
+}
 .price__item-bonuses {
     padding: 0 0 25px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .price__item-bonuse {
@@ -1027,8 +1034,9 @@ text-transform: uppercase;
 
 /*RESULTS*/
 
-.results__title {
+.title__result {
     margin-top: 75px;
+    margin-bottom: 10px;
 }
 .result__list {
     margin: 75px 0;
@@ -1207,7 +1215,9 @@ line-height: normal;
         flex-direction: column;
         gap: 10px;
     }
-
+    .panel__content-top {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 325px) {
